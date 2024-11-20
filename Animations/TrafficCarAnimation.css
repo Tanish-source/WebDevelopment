@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: darkgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.car {
+  position: absolute;
+  top: 40px;
+  left: 560px;
+  animation-name: carMove;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes carMove {
+  0% {
+    left: 560px;
+    top: 40px;
+    transform: rotate(0deg);
+  }
+  24.99% {
+    transform: rotate(0deg);
+  }
+  25% {
+    left: 950px;
+    top: 40px;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 950px;
+    top: 480px;
+    transform: rotate(90deg);
+  }
+  50.01% {
+    transform: rotate(180deg);
+  }
+  75% {
+    left: 505px;
+    top: 480px;
+    transform: rotate(180deg);
+  }
+  75.01% {
+    transform: rotate(270deg);
+  }
+  99.99% {
+    transform: rotate(270deg);
+  }
+  100% {
+    left: 505px;
+    top: 40px;
+    transform: rotate(360deg);
+  }
+}

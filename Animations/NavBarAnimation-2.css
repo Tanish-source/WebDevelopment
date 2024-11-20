@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  color: aliceblue;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  margin: 80px;
+  transition: 0.5s;
+  padding: 6px 20px;
+}
+a:hover {
+  color: #0ef;
+}
+.navbar a span {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #0ef;
+  border-radius: 15px;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.2s;
+}
+.navbar a:hover span {
+  transform: scale(1.5);
+  opacity: 1;
+}

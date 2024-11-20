@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  color: aliceblue;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  z-index: 1;
+  margin: 50px;
+}
+.navbar span {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 100px;
+  height: 50px;
+  background: linear-gradient(45deg, #af1919, #f33333);
+  border-radius: 9px;
+  transition-duration: 0.5s;
+}
+.navbar a:nth-child(1):hover ~ span {
+  left: 50;
+}
+.navbar a:nth-child(2):hover ~ span {
+  left: 295px;
+}
+.navbar a:nth-child(3):hover ~ span {
+  left: 575px;
+}
+.navbar a:nth-child(4):hover ~ span {
+  left: 860px;
+}
+.navbar a:nth-child(5):hover ~ span {
+  left: 1130px;
+}
+.navbar a:nth-child(6):hover ~ span {
+  left: 1410px;
+}
