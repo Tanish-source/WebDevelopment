@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neue Machina";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+::selection {
+  background-color: #000;
+  color: #ffffff;
+}
+#main {
+  width: 100%;
+  background-color: #fff;
+}
+#home {
+  width: 100%;
+  min-height: 100vh;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 50px;
+}
+#nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1vw;
+  letter-spacing: 0.7;
+  font-weight: 500;
+}
+#left img {
+  width: 100px;
+}
+#right {
+  display: flex;
+  gap: 40px;
+}
+#right i {
+  font-size: 18px;
+}
+#homemain {
+  width: 100%;
+  padding: 15vw;
+}
+#homemain h2 {
+  line-height: 1;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+#headings {
+  display: flex;
+  gap: 35px;
+}
+#homemain #headings h1 {
+  color: transparent;
+  -webkit-text-stroke: 0.2px rgb(127, 127, 127);
+  font-size: 6.3vw;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+#homemain #headings h1:hover {
+  color: #000;
+  -webkit-text-stroke: 0.2px #000;
+}
+#homelast {
+  padding: 5vw 15vw;
+}
+#homelast p {
+  width: 75%;
+  font-size: 1.7vw;
+  font-weight: 550;
+  letter-spacing: -0.01vw;
+}
+#homelast p::selection {
+  color: #fff;
+  background-color: #000;
+}
+#featured {
+  padding: 10vw 15vw;
+}
+.fheading > h1 {
+  font-size: 3.8vw;
+  font-weight: 400;
+  letter-spacing: -0.2vw;
+  line-height: 1;
+}
+.fheading > h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+#fhero {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+#fleft {
+  overflow: hidden;
+  width: 45%;
+  height: inherit;
+}
+.fleftelem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
+}
+.fleftelem h1 {
+  font-size: 2.4vw;
+  letter-spacing: -0.1vw;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 1.5vw 0;
+}
+.fleftelem h3 {
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+.fleftelem h4 {
+  opacity: 0.6;
+  font-size: 1.1vw;
+}
+#fright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 45%;
+  height: inherit;
+}
+#fright .images {
+  width: 90%;
+  height: 90%;
+}
+#fright .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn button {
+  font-size: 1vw;
+  font-weight: 600;
+  letter-spacing: -0.01vw;
+  padding: 1vw 1.5vw;
+  border: 1px solid #d1d1d1;
+  border-radius: 100px;
+  background-color: #fff;
+}
+#dev {
+  width: 100%;
+  padding: 5vw 15vw;
+}
+#dev h1 {
+  font-size: 3.5vw;
+  font-weight: 400;
+  width: 55%;
+  line-height: 1;
+  letter-spacing: -0.1vw;
+}
+#dev p {
+  width: 60%;
+  font-size: 1.3vw;
+  font-weight: 550;
+  letter-spacing: -0.01vw;
+  margin-top: 2.4vw;
+}
+#sliders {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3vw 9vw;
+}
+#sliders .slide {
+  width: 30%;
+}
+.slide .img {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 260px;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide .tag {
+  width: fit-content;
+  background-color: #f7f7f7;
+  border-radius: 100px;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+.slide h3 {
+  font-size: 1.3vw;
+  font-weight: 400;
+  letter-spacing: -0.09vw;
+}
